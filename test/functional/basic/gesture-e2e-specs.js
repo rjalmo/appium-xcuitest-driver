@@ -26,7 +26,7 @@ describe('XCUITestDriver - gestures', function () {
     afterEach(async () => {
       // wait a moment to allow anything to happen
       await B.delay(1000);
-      await clickButton(driver, 'UICatalog');
+      await driver.back();
     });
 
     describe('tap, press, longpress', () => {
